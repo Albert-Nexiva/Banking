@@ -118,7 +118,7 @@ public class BankingClient {
     }
 
     private static BankingAccount findAccount(long accountNumber) {
-        for (int i = 0; i < accountCount; i++) {
+        for (int i = 0; i < accounts.length; i++) {
             if (accounts[i].getAccountNumber() == accountNumber) {
                 return accounts[i];
             }
